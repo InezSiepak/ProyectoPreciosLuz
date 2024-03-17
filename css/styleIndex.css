@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borderbox;
+}
+
+body {
+    /* justify-content: center; */
+    /* display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 200px 100px minmax(100px, auto);
+    gap: 5px; */
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: .5rem;
+
+
+}
+
+header {
+    background-color: rgb(100, 100, 105);
+    color: white;
+    grid-column: 1fr;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+
+}
+
+h1 {
+    text-align: justify;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#vinculos {
+    color: white;
+    font-size: 1.5rem;
+    outline: none;
+    text-decoration: none;
+}
+
+#salonLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+
+}
+
+#bañoLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#dormitorioLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#cocinaLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+#bienvenida {
+    margin: 2vh;
+    justify-content: center;
+
+}
+
+#imgCocina {
+    border: 200px;
+    width: 320px;
+    margin: 20px;
+
+}
+
+#imgBaño {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#imgSalon {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
