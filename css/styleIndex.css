@@ -29,22 +29,45 @@ header {
 
 h1 {
     text-align: justify;
-    padding: 1rem;
+    padding: .5rem;
     justify-content: center;
 }
 
 #vinculos {
     color: white;
-    font-size: 1.5rem;
+    font-size: 20px;
     outline: none;
     text-decoration: none;
+}
+
+/* #links {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+} */
+
+#limpiezaLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: .8rem;
+}
+
+#iluminacionLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: .8rem;
+
 }
 
 #salonLink {
     outline: none;
     text-decoration: none;
     color: white;
-    padding: 1rem;
+    padding: .8rem;
+
 
 }
 
@@ -52,21 +75,24 @@ h1 {
     outline: none;
     text-decoration: none;
     color: white;
-    padding: 1rem;
+    padding: .8rem;
+
 }
 
 #dormitorioLink {
     outline: none;
     text-decoration: none;
     color: white;
-    padding: 1rem;
+    padding: .8rem;
+
 }
 
 #cocinaLink {
     outline: none;
     text-decoration: none;
     color: white;
-    padding: 1rem;
+    padding: .8rem;
+
 }
 
 #lavanderiaLink {
@@ -77,9 +103,19 @@ h1 {
 }
 
 #bienvenida {
-    margin: 2vh;
+    margin: 1.5rem;
     justify-content: center;
 
+}
+
+#comoFunciona {
+    margin: 1.5rem;
+    justify-content: center;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
 }
 
 #imgCocina {
@@ -99,4 +135,32 @@ h1 {
     border: 10px;
     width: 320px;
     margin: 20px;
+}
+
+#imgLimpieza {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#imgIluminacion {
+    border: 10px;
+    width: 220px;
+    margin: 20px;
+}
+
+h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(100, 100, 105);
+    color: white;
+
+}
+
+#h3Footer {
+    color: white;
+    text-align: left;
 }
