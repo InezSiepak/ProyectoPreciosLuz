@@ -12,18 +12,31 @@ body {
     gap: 5px; */
     grid-auto-rows: minmax(125px, auto);
     grid-gap: .5rem;
-
-
+    
+    background-color: rgb(183, 211, 217);
+    height: 100vh;
+    
 }
+
 
 header {
     background-color: rgb(100, 100, 105);
-    color: white; /*Qué tal de ponerle otro color(pj. amarillo) para diferenciarlo de las secciones?*/
+    color: white;
     grid-column: 1fr;
     width: 100%;
     top: 0;
     left: 0;
     position: sticky;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+    /*overflow: auto;*/
+
 
 }
 
@@ -40,19 +53,19 @@ h1 {
     text-decoration: none;
 }
 
+#inicioLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
 #salonLink {
     outline: none;
     text-decoration: none;
     color: white;
     padding: 1rem;
-
-}
-
-#banoLink {
-    outline: none;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
+    
 }
 
 #dormitorioLink {
@@ -76,27 +89,47 @@ h1 {
     padding: 1rem;
 }
 
-#bienvenida {
-    margin: 2vh;
+
+h2 {
+    text-align: justify;
     justify-content: center;
+    padding: 2rem 1rem 1rem 1rem ;
+}
+
+h2 + p {
+    text-align: justify;
+    padding: 1rem;
+}
+
+article {
+    padding: 1rem;
+}
+
+h3, img + p {
+    padding: 1rem;
 
 }
 
-#imgCocina {
-    border: 200px;
-    width: 320px;
-    margin: 20px;
+img {
+    padding: 1rem;
+    width: 300px;
+    height: 300px; 
+}
+
+#electrodomesticos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
-#imgBaño {
-    border: 10px;
-    width: 320px;
-    margin: 20px;
-}
-
-#imgSalon {
-    border: 10px;
-    width: 320px;
-    margin: 20px;
+article  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*overflow: auto;*/
+  
 }
