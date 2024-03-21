@@ -13,70 +13,88 @@
     <header>
         <h1>Electrodomésticos que puedes tener en tu baño</h1>
 
-        <section id="vinculos">
+        <nav id="vinculos">
             <a href="index.html" id="inicioLink">Página Principal</a>
             <a href="Salon.html" id="salonLink">Salón</a>
             <a href="Cocina.html" id="cocinaLink">Cocina</a>
             <a href="Dormitorio.html" id="dormitorioLink">Dormitorio</a>
             <a href="Lavanderia.html" id="lavanderiaLink">Lavandería</a>
-
+        </nav>
 
     </header>
 
     <main>
         <!--Listado de electrodomésticos de un baño-->
-        <h2>
-            En ésta sección puedes calcular el consumo de los artículos de aseo que utilizas en los momentos de higiene y bienestar.
-        </h2>
-        <p>
-            A continuación te presentamos un listado de electrodomésticos:
-         </p>
+        
+        <section id="electrodomesticos" aria-label="Listado de electrodomésticos de un baño"> <!--Section es un contenedor-->
+            <h2>
+                Aquí puedes consultar el consumo de electricidad que puede generar tu cuarto de baño.
+            </h2>
+            <p>
+                A continuación te presentamos un listado con diferentes electrodomésticos que puedas tener en tu cuarto de baño:
+             </p>
 
-        <section id="electrodomesticos">
+             <!--method GET: para envío de datos no confidenciales-->
+             <!--form tiene una acción establecida para el servidor "API.js"-->
 
-            <article>
-                <h3>Secadora del pelo</h3>
-                    <img src="./img/baño/secadoraSmall.jpg" alt="Una imagen que muestra una secadora de pelo">
-                    <p> Descripción: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed velit dignissimos saepe ipsam, exercitationem fugit animi maiores consequatur fuga vel suscipit quo totam hic, fugiat molestiae et dolorum corrupti optio? </p> 
-            </article>
+                    <ul>
+                    
+                        <li>
+                            <label for="secadoraPelo" name="secadoraPelo" id="secadoraPelo"><h3>Secadora del pelo</h3></label>
+                            <input type="checkbox" name="secadoraPelo" id="secadoraPelo">
+                            <img src="./img/baño/secadoraSmall.jpg" alt="Una imagen que muestra una secadora de pelo">
+                            <p>Gasto de luz en el día presente Mv/h</p>  
+                        </li>
+    
+                        <li>
+                            <h3>Calefactor</h3>
+                            <img src="./img/baño/calefactorSmall.jpg" alt="Una imagen de un calefactor eléctrico" id="imgCalefactor">
+                            <p> Gasto de luz en el día presente Mv/h<p>                
+                        </li>
+    
+                        <li>
+                            <h3>Máquina de afeitar</h3>
+                            <img src="./img/baño/máquinaDeAfeitarSmall.jpg" alt="Una imagen de una máquina eléctrica de afeitar.">
+                            <p>Gasto de luz en el día presente Mv/h<p>             
+                        </li>
+    
+                        <li>
+                            <h3>Depiladora</h3>
+                            <img src="./img/baño/depiladoraSmall.jpg" alt="Una imagen de una depiladora con sus accesorios">
+                            <p>Gasto de luz en el día presente Mv/h</p>          
+                        </li>
+    
+                        <li>
+                            <h3>Plancha del pelo</h3>
+                            <img src="./img/baño/planchaDePeloSmall.jpg" alt="Una imagen de una plancha de pelo.">
+                            <p>Gasto de luz en el día presente Mv/h</p>                 
+                        </li>
+    
+                        <li>
+                            <h3>Cepillo eléctrico de diente</h3>
+                            <img src="./img/baño/cepilloDeDientesSmall.jpg" alt="Una imagen de un cepillo de dientes eléctrico." >
+                            <p>Gasto de luz en el día presente Mv/h</p>                 
+                        </li>
+    
+                        <li>
+                            <h3>Toallero eléctrico</h3>
+                            <img src="./img/baño/toalleroSmall.jpg" alt="Una imagen de un toallero eléctrico.">
+                            <p> Gasto de luz en el día presente Mv/h</p>                
+    
+                        </li>
+    
+                     </ul>
 
-            <article>
-                <h3>Calefactor</h3>
-                <img src="./img/baño/calefactorSmall.jpg" alt="Una imagen de un calefactor eléctrico" id="imgCalefactor">
-                <p> Descripción: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laboriosam tempora eos doloremque ad ab debitis unde cupiditate repellendus repellat, saepe quod distinctio a sequi consectetur nesciunt hic cumque ducimus. </p>                 
-            </article>
-            
-            <article>
-                <h3>Máquina de afeitar</h3>
-                <img src="./img/baño/máquinaDeAfeitarSmall.jpg" alt="Una imagen de una máquina eléctrica de afeitar.">
-                <p> Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quis consectetur veniam corporis architecto incidunt ratione ad dicta repudiandae debitis illo qui, pariatur, exercitationem voluptatem laboriosam eaque, deserunt dolor ipsam? </p>                 
-            </article>
-            
-            <article >
-                <h3>Depiladora</h3>
-                <img src="./img/baño/depiladoraSmall.jpg" alt="Una imagen de una depiladora con sus accesorios">
-                <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem omnis excepturi iusto iure dignissimos vero nobis ea vel. Voluptate, maiores at quos provident sit qui? Quod saepe tempore soluta doloribus. </p>                 
-            </article>
-            
-            <article>
-                <h3>Plancha del pelo</h3>
-                <img src="./img/baño/planchaDePeloSmall.jpg" alt="Una imagen de una plancha de pelo.">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero assumenda enim alias obcaecati natus, expedita perferendis deserunt exercitationem, itaque facere id sit et nostrum temporibus fugiat provident quos consequuntur.</p>                 
-            </article>
+               </fieldset>
 
-            <article>
-                <h3>Cepillo eléctrico de diente</h3>
-                <img src="./img/baño/cepilloDeDientesSmall.jpg" alt="Una imagen de un cepillo de dientes eléctrico." >
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias obcaecati quos nihil accusantium similique dicta officiis quaerat aperiam rerum, aspernatur, animi ea itaque tempore aliquam explicabo numquam doloremque ullam? </p>                 
-            </article>
 
-            <article>
-                <h3>Toallero eléctrico</h3>
-                <img src="./img/baño/toalleroSmall.jpg" alt="Una imagen de un toallero eléctrico.">
-                <p> Descripción: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sit fugit architecto ab quos expedita repudiandae vel laboriosam natus similique, impedit nam necessitatibus libero consequatur ipsam earum tempora maiores possimus?
-                </p>                 
-            </article>
-
+      
+        
+      
+    
+     
+     
+            </form>
        </section>
 
        <!--Calculo Luz-->
@@ -105,7 +123,7 @@
             <!--algo de relleno o no-->
         </p>
 
-        <form action="">
+        <form action="" method="">
 
             <div>
                 <input type="checkbox" id="secadorPelo">
