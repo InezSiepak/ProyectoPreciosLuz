@@ -26,74 +26,83 @@
     <main>
         <!--Listado de electrodomésticos de un baño-->
         
+        <h2>
+            Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
+            <!--Aquí puedes consultar el consumo de electricidad de los enseres que utilizas en los momentos de
+            higiene y bienestar.-->
+        </h2>
+        <p>
+            A continuación te presentamos un listado de los electrodomésticos más comunes:
+        </p> 
+
         <section id="electrodomesticos" aria-label="Listado de electrodomésticos de un baño"> <!--Section es un contenedor-->
-            <h2>
-                Aquí puedes consultar el consumo de electricidad de los electrodomésticos que utilizas en los momentos de
-                higiene y bienestar.
-            </h2>
-            <p>
-                A continuación te presentamos un listado de los electrodomésticos más comunes que podrías tener en tu cuarto de baño:
-             </p>
+            
+                <ul id="listaBano">
 
-                    <ul id="listaBano">
+                    <li id="secadoraPelo">
 
-                        <li id="secadoraPelo">
-                            <h3>Secadora del pelo</h3>
-                            <img src="./img/baño/secadoraSmall.jpg" alt="Una imagen que muestra una secadora de pelo" id="img">
-                            <p>El consumo de electricidad de una secadora utilizándola 1 hora es de (precio MV/h)</p>
+                        <h3>Secadora del pelo</h3>
+                        <img src="./img/baño/secadoraSmall.jpg" alt="Una imagen que muestra una secadora de pelo" id="img">
+                        <p>El consumo de electricidad de una secadora (MV/h)</p>
 
                             <!-- CON JS CREAR <p> para meter -> <p>Gasto de luz en el día presente Mv/h</p> 
                             -->
-                        </li>
+                    </li>
     
-                        <li id="calefactor">
-                            <h3>Calefactor</h3>
-                            <img src="./img/baño/calefactorSmall.jpg" alt="Una imagen de un calefactor eléctrico" id="img">
-                            <p>El consumo de electricidad de un calefactor utilizándolo 1 hora es de (precio MV/h)</p>
+                    <li id="calefactor">
+
+                        <h3>Calefactor</h3>
+                        <img src="./img/baño/calefactorSmall.jpg" alt="Una imagen de un calefactor eléctrico" id="img">
+                        <p>El consumo de electricidad de un calefactor (MV/h)</p>
 
                             <!-- Con JS <p> Gasto de luz el día de hoy Mv/h<p> -->          
-                        </li>
+                    </li>
     
-                        <li id="maquinaAfeitar">
-                            <h3>Máquina de afeitar</h3>
-                            <img src="./img/baño/máquinaDeAfeitarSmall.jpg" alt="Una imagen de una máquina eléctrica de afeitar." id="img">
-                            <p>El consumo de electricidad de una máquina de afeitar utilizándola 1 hora es de (precio MV/h)</p>
+                    <li id="maquinaAfeitar">
+
+                        <h3>Máquina de afeitar</h3>
+                        <img src="./img/baño/máquinaDeAfeitarSmall.jpg" alt="Una imagen de una máquina eléctrica de afeitar." id="img">
+                        <p>El consumo de electricidad de una máquina de afeitar (MV/h)</p>
                             
                             <!--Con JS <p>Gasto de luz en el día presente Mv/h<p>       -->      
-                        </li>
+                    </li>
     
-                        <li id="depiladora">
-                            <h3>Depiladora</h3>
-                            <img src="./img/baño/depiladoraSmall.jpg" alt="Una imagen de una depiladora con sus accesorios" id="img">
-                            <p>El consumo de electricidad de una depiladora utilizándola 1 hora es de (precio MV/h)</p>
-                        </li>
+                    <li id="depiladora">
+
+                        <h3>Depiladora</h3>
+                        <img src="./img/baño/depiladoraSmall.jpg" alt="Una imagen de una depiladora con sus accesorios" id="img">
+                        <p>El consumo de electricidad de una depiladora (MV) </p>
+                    </li>
     
-                        <li id="planchaPelo">
-                            <h3>Plancha del pelo</h3>
-                            <img src="./img/baño/planchaDePeloSmall.jpg" alt="Una imagen de una plancha de pelo." id="img">
-                            <p>El consumo de electricidad de una plancha de pelo utilizándola 1 hora es de (precio MV/h)</p>
+                    <li id="planchaPelo">
+
+                        <h3>Plancha del pelo</h3>
+                        <img src="./img/baño/planchaDePeloSmall.jpg" alt="Una imagen de una plancha de pelo." id="img">
+                        <p>El consumo de electricidad de una plancha de pelo (MV/h)</p>
 
                             <!--<p>Gasto de luz en el día presente Mv/h</p>  -->      
-                        </li>
+                    </li>
     
-                        <li id="cepilloDientes">
-                            <h3>Cepillo eléctrico de diente</h3>
-                            <img src="./img/baño/cepilloDeDientesSmall.jpg" alt="Una imagen de un cepillo de dientes eléctrico." id="img">
-                            <p>El consumo de electricidad de un cepillo de dientes utilizándolo 1 hora es de (precio MV/h)</p>
+                    <li id="cepilloDientes">
+
+                        <h3>Cepillo eléctrico de diente</h3>
+                        <img src="./img/baño/cepilloDeDientesSmall.jpg" alt="Una imagen de un cepillo de dientes eléctrico." id="img">
+                        <p>El consumo de electricidad de un cepillo de dientes (MV/h)</p>
 
                              <!--<p>Gasto de luz en el día presente Mv/h</p>  -->                   
-                        </li>
+                    </li>
     
-                        <li id="toallero">
-                            <h3>Toallero eléctrico</h3>
-                            <img src="./img/baño/toalleroSmall.jpg" alt="Una imagen de un toallero eléctrico." id="img">
-                            <p>El consumo de electricidad de un toallero eléctrico utilizándolo 1 hora es de (precio MV/h)</p>
+                    <li id="toallero">
+
+                        <h3>Toallero eléctrico</h3>
+                        <img src="./img/baño/toalleroSmall.jpg" alt="Una imagen de un toallero eléctrico." id="img">
+                        <p>El consumo de electricidad de un toallero (MV/h)</p>
 
                             <!--<p>Gasto de luz en el día presente Mv/h</p>  -->                 
     
-                        </li>
+                    </li>
     
-                     </ul>
+                </ul>
 
                         <!--Otra sectión con los resultados de los checkbox seleccionados por el usuario-->
                      <!--Para enviar los checkbox seleccionados un botón submit, y posiblemente un <outpuut> para mostrar el resultado del cálculo que es lanzado desde JS -->
