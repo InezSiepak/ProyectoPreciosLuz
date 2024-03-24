@@ -29,6 +29,11 @@
         <h2>
             Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
         </h2>
+
+        <p>
+            El precio de esta hora es: <p id="precioHora"></p>
+        </p>
+
         <p>
             A continuación te presentamos un listado de los electrodomésticos más comunes:
         </p> 
@@ -37,9 +42,9 @@
             
                 <ul id="listaBano">
 
-                    <li id="secadoraPelo">
-                        <input type="checkbox" id="myCheck" name="secadora">
-                        <label for="secadoraDePelo"><h3>Secadora de pelo</h3></label>
+                    <li>
+                        <input type="checkbox" id="secadoraPelo" name="secadoraPelo">
+                        <label for="secadoraPelo"><h3>Secadora de pelo</h3></label>
                         <img src="./img/baño/secadoraSmall.jpg" alt="Una imagen que muestra una secadora de pelo" id="img">
                         <p>El consumo de electricidad de una secadora (MV/h)</p>
 
@@ -47,8 +52,8 @@
                             -->
                     </li>
     
-                    <li id="calefactor">
-                        <input type="checkbox" id="myCheck" name="calefactor">
+                    <li>
+                        <input type="checkbox" id="calefactor" name="calefactor">
                         <label for="calefactor"><h3>Calefactor</h3></label>
                         <img src="./img/baño/calefactorSmall.jpg" alt="Una imagen de un calefactor eléctrico" id="img">
                         <p>El consumo de electricidad de un calefactor (MV/h)</p>
@@ -56,34 +61,34 @@
                             <!-- Con JS <p> Gasto de luz el día de hoy Mv/h<p> -->          
                     </li>
     
-                    <li id="maquinaAfeitar">
-                        <input type="checkbox" id="myCheck" name="maquinaDeAfeitar">
-                        <label for="maquinaDeAfeitar"><h3>Máquina de afeitar</h3></label>
+                    <li>
+                        <input type="checkbox" id="maquinaAfeitar" name="maquinaAfeitar">
+                        <label for="maquinaAfeitar"><h3>Máquina de afeitar</h3></label>
                         <img src="./img/baño/máquinaDeAfeitarSmall.jpg" alt="Una imagen de una máquina eléctrica de afeitar." id="img">
                         <p>El consumo de electricidad de una máquina de afeitar (MV/h)</p>
                             
                             <!--Con JS <p>Gasto de luz en el día presente Mv/h<p>       -->      
                     </li>
     
-                    <li id="depiladora">
-                        <input type="checkbox" id="myCheck" name="depiladora">
+                    <li>
+                        <input type="checkbox" id="depiladora" name="depiladora">
                         <label for="depiladora"><h3>Depiladora</h3></label>
                         <img src="./img/baño/depiladoraSmall.jpg" alt="Una imagen de una depiladora con sus accesorios" id="img">
                         <p>El consumo de electricidad de una depiladora (MV) </p>
                     </li>
     
-                    <li id="planchaPelo">
-                        <input type="checkbox" id="myCheck" name="plancha">
-                        <label for="planchaDePelo"><h3>Plancha de pelo</h3></label>
+                    <li>
+                        <input type="checkbox" id="planchaPelo" name="planchaPelo">
+                        <label for="planchaPelo"><h3>Plancha de pelo</h3></label>
                         <img src="./img/baño/planchaDePeloSmall.jpg" alt="Una imagen de una plancha de pelo." id="img">
                         <p>El consumo de electricidad de una plancha de pelo (MV/h)</p>
 
                             <!--<p>Gasto de luz en el día presente Mv/h</p>  -->      
                     </li>
     
-                    <li id="cepilloDientes">
+                    <li>
                         
-                        <input type="checkbox" id="myCheck" name="cepillo">
+                        <input type="checkbox" id="cepilloDientes" name="cepillo">
                         <label for="cepillo"><h3>Cepillo eléctrico de diente</h3></label>
                         <img src="./img/baño/cepilloDeDientesSmall.jpg" alt="Una imagen de un cepillo de dientes eléctrico." id="img">
                         <p>El consumo de electricidad de un cepillo de dientes (MV/h)</p>
@@ -91,8 +96,8 @@
                              <!--<p>Gasto de luz en el día presente Mv/h</p>  -->                   
                     </li>
     
-                    <li id="toallero">
-                        <input type="checkbox" id="myCheck" name="toallero">
+                    <li>
+                        <input type="checkbox" id="toallero" name="toallero">
 
                         <label for="toallero"><h3>Toallero eléctrico</h3></label>
 
@@ -111,11 +116,10 @@
          <!--Para enviar los checkbox seleccionados un botón submit, y posiblemente un <outpuut> para mostrar el resultado del cálculo que es lanzado desde JS -->
 
             <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
-
-                <input type="button" value="Calcular" onclick="consumoTotal()" />
-
+                <div>
+                    <input type="button" value="Calcular" onclick="consumoTotal()" />
+                </div>
                 <h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
-
             </section>
 
        <!-- OPCIONAL: si nos da tiempo, mostrar aquí también la mejor y peor hora para utilizar los electrodomésticos -->

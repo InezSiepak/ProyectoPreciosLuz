@@ -91,39 +91,155 @@ async function getTotalPrice(startHour, endHour, diviceWh) {
 	}
 	return { priceSum, pricesByHour };
 }
-//definimos los consumor por hora de distintos electrodomesticos
 
-let nevera = getTotalPrice(getEndHour, getEndHour + 1, 300).then((p) => {
-	nevera = p.priceSum;
+//definimos los consumos por hora de distintos electrodomesticos
+
+//Salón
+let television = getTotalPrice(getEndHour, getEndHour + 1, 260).then((p) => {
+	television = p.priceSum;
 });
+
+let wifi = getTotalPrice(getEndHour, getEndHour + 1, 8).then((p) => {
+	wifi = p.priceSum;
+});     
+
+let altavoces = getTotalPrice(getEndHour, getEndHour + 1, 40).then((p) => {
+	altavoces = p.priceSum;
+});  
+
+let consolaVideojuegos = getTotalPrice(getEndHour, getEndHour + 1, 120).then((p) => {
+	consolaVideojuegos = p.priceSum;
+}); 
+
 
 let ordenador = getTotalPrice(getEndHour, getEndHour + 1, 750).then((p) => {
 	ordenador = p.priceSum;
 });
 
-let lavavajillas = getTotalPrice(getEndHour, getEndHour + 1, 1200).then((p) => {
-	lavavajillas = p.priceSum;
-});
-
-let lampara = getTotalPrice(getEndHour, getEndHour + 1, 11).then((p) => {
-	lampara = p.priceSum;
-});
-
-let lavadora = getTotalPrice(getEndHour, getEndHour + 1, 500).then((p) => {
-	lavadora = p.priceSum;
-});
-
-let television = getTotalPrice(getEndHour, getEndHour + 1, 260).then((p) => {
-	television = p.priceSum;
+let ventilador = getTotalPrice(getEndHour, getEndHour + 1, 25).then((p) => {
+	ventilador = p.priceSum;
 });
 
 let airCon = getTotalPrice(getEndHour, getEndHour + 1, 2000).then((p) => {
 	airCon = p.priceSum;
 });
 
+
+//Cocina
+
+let nevera = getTotalPrice(getEndHour, getEndHour + 1, 300).then((p) => {
+	nevera = p.priceSum;
+});
+
+ micro = getTotalPrice(getEndHour, getEndHour + 1, 800).then((p) => {
+	micro = p.priceSum;
+});
+
+let horno = getTotalPrice(getEndHour, getEndHour + 1, 1500).then((p) => {
+	horno = p.priceSum;
+});
+
+let vitro = getTotalPrice(getEndHour, getEndHour + 1, 1500).then((p) => {
+	vitro = p.priceSum;
+});
+
+let campanaExtractora = getTotalPrice(getEndHour, getEndHour + 1, 50).then((p) => {
+	campanaExtractora = p.priceSum;
+});
+
+let lavavajillas = getTotalPrice(getEndHour, getEndHour + 1, 1200).then((p) => {
+	lavavajillas = p.priceSum;
+});
+
+let cafetera = getTotalPrice(getEndHour, getEndHour + 1, 600).then((p) => {
+	cafetera = p.priceSum;
+});
+
+let tostadora = getTotalPrice(getEndHour, getEndHour + 1, 36).then((p) => {
+	tostadora = p.priceSum;
+});
+
+let robotCocina = getTotalPrice(getEndHour, getEndHour + 1, 500).then((p) => {
+	robotCocina = p.priceSum;
+});
+
+let olla = getTotalPrice(getEndHour, getEndHour + 1, 200).then((p) => {
+	olla = p.priceSum;
+});
+
+let batidora = getTotalPrice(getEndHour, getEndHour + 1, 350).then((p) => {
+	batidora = p.priceSum;
+});
+
+let exprimidorZumo = getTotalPrice(getEndHour, getEndHour + 1, 300).then((p) => {
+	exprimidorZumo = p.priceSum;
+});
+
+let freidora = getTotalPrice(getEndHour, getEndHour + 1, 1500).then((p) => {
+	freidora = p.priceSum;
+});
+
+let osmosis = getTotalPrice(getEndHour, getEndHour + 1, 100).then((p) => {
+	osmosis = p.priceSum;
+});
+
+let hervidorAgua = getTotalPrice(getEndHour, getEndHour + 1, 1500).then((p) => {
+	hervidorAgua = p.priceSum;
+});
+
+//Baño
+
+let secadoraPelo = getTotalPrice(getEndHour, getEndHour + 1, 1600).then((p) => {
+	secadoraPelo = p.priceSum;
+});
+
 let calefactor = getTotalPrice(getEndHour, getEndHour + 1, 1500).then((p) => {
 	calefactor = p.priceSum;
 });
+
+let maquinaAfeitar = getTotalPrice(getEndHour, getEndHour + 1, 5).then((p) => {
+	maquinaAfeitar = p.priceSum;
+});
+
+let depiladora = getTotalPrice(getEndHour, getEndHour + 1, 40).then((p) => {
+	maquinaAfeitar = p.priceSum;
+});
+
+let planchaPelo = getTotalPrice(getEndHour, getEndHour + 1, 1000).then((p) => {
+	planchaPelo = p.priceSum;
+});
+
+//let cepilloDientes = 
+
+//Lavandería
+
+//let aspiradora =
+
+let lavadora = getTotalPrice(getEndHour, getEndHour + 1, 500).then((p) => {
+	lavadora = p.priceSum;
+});
+
+//let secadoraRopa = 
+
+//let plancha = 
+
+//let aspiradoraRobot = 
+
+//Dormitorio
+
+let lampara = getTotalPrice(getEndHour, getEndHour + 1, 11).then((p) => {
+	lampara = p.priceSum;
+});
+
+//let despertador = 
+
+//let lamparaVentilador = 
+
+//let espejoLED = 
+
+//let radio = 
+
+
 
 function consumoTotal() {
 	console.log(
@@ -134,7 +250,27 @@ function consumoTotal() {
 			lavadora +
 			television +
 			airCon +
-			calefactor
+			calefactor +
+			wifi +
+			altavoces +
+			consolaVideojuegos +
+			ventilador +
+			micro +
+			horno +
+			vitro +
+			campanaExtractora +
+			cafetera +
+			tostadora +
+			robotCocina +
+			olla +
+			batidora +
+			exprimidorZumo +
+			freidora +
+			osmosis +
+			hervidorAgua +
+			secadoraPelo +
+			maquinaAfeitar +
+			depiladora
 	);
 	let checkConsumo = 0;
 
@@ -147,7 +283,28 @@ function consumoTotal() {
 		{ id: "television", consumo: television },
 		{ id: "airCon", consumo: airCon },
 		{ id: "calefactor", consumo: calefactor },
+		{ id: "wifi", consumo: wifi},
+		{ id: "altavoces", consumo: altavoces},
+		{ id: "consolaVideojuegos", consumo: consolaVideojuegos},
+		{ id: "ventilador", consumo: ventilador},
+		{ id: "micro", consumo: micro},
+		{ id: "horno", consumo: horno},
+		{ id: "vitro", consumo: vitro},
+		{ id: "campanaExtractora", consumo: campanaExtractora},
+		{ id: "cafetera", consumo: cafetera},
+		{ id: "tostadora", consumo: tostadora},
+		{ id: "robotCocina", consumo: robotCocina},
+		{ id: "olla", consumo: olla},
+		{ id: "batidora", consumo: batidora},
+		{ id: "exprimidorZumo", consumo: exprimidorZumo},
+		{ id: "freidora", consumo: freidora},
+		{ id: "osmosis", consumo: osmosis},
+		{ id: "hervidorAgua", consumo: hervidorAgua},
+		{ id: "secadoraPelo", consumo: secadoraPelo},
+		{ id: "maquinaAfeitar", consumo: maquinaAfeitar},
+		{ id: "depiladora", consumo: depiladora},
 	];
+
 	arrayConsumo.forEach((electrodomestico) => {
 		const cheElectrodomestico = document.getElementById(electrodomestico.id);
 		console.log(cheElectrodomestico.checked);
