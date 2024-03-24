@@ -209,21 +209,31 @@ let planchaPelo = getTotalPrice(getEndHour, getEndHour + 1, 1000).then((p) => {
 	planchaPelo = p.priceSum;
 });
 
-//let cepilloDientes = 
+let cepilloDientes = getTotalPrice(getEndHour, getEndHour + 1, 35).then((p) => {
+	cepilloDientes = p.priceSum;
+});
 
 //Lavandería
 
-//let aspiradora =
+let aspiradora = getTotalPrice(getEndHour, getEndHour + 1, 1000).then((p) => {
+	aspiradora = p.priceSum;
+});
 
 let lavadora = getTotalPrice(getEndHour, getEndHour + 1, 500).then((p) => {
 	lavadora = p.priceSum;
 });
 
-//let secadoraRopa = 
+let secadoraRopa = getTotalPrice(getEndHour, getEndHour + 1, 250).then((p) => {
+	secadoraRopa = p.priceSum;
+});
 
-//let plancha = 
+let plancha = getTotalPrice(getEndHour, getEndHour + 1, 1500).then((p) => {
+	plancha = p.priceSum;
+});
 
-//let aspiradoraRobot = 
+let aspiradoraRobot = getTotalPrice(getEndHour, getEndHour + 1, 30).then((p) => {
+	aspiradoraRobot = p.priceSum;
+});
 
 //Dormitorio
 
@@ -231,13 +241,21 @@ let lampara = getTotalPrice(getEndHour, getEndHour + 1, 11).then((p) => {
 	lampara = p.priceSum;
 });
 
-//let despertador = 
+let despertador = getTotalPrice(getEndHour, getEndHour + 1, 2).then((p) => {
+	despertador = p.priceSum;
+});
 
-//let lamparaVentilador = 
+let lamparaVentilador = getTotalPrice(getEndHour, getEndHour + 1, 80).then((p) => {
+	lamparaVentilador = p.priceSum;
+});
 
-//let espejoLED = 
+let espejoLED = getTotalPrice(getEndHour, getEndHour + 1, 3).then((p) => {
+	espejoLED = p.priceSum;
+});
 
-//let radio = 
+let radio = getTotalPrice(getEndHour, getEndHour + 1, 30).then((p) => {
+	radio = p.priceSum;
+});
 
 
 
@@ -270,7 +288,17 @@ function consumoTotal() {
 			hervidorAgua +
 			secadoraPelo +
 			maquinaAfeitar +
-			depiladora
+			depiladora +
+			planchaPelo +
+			cepilloDientes +
+			aspiradora +
+			secadoraRopa +
+			plancha +
+			aspiradoraRobot +
+			despertador +
+			lamparaVentilador +
+			espejoLED +
+			radio
 	);
 	let checkConsumo = 0;
 
@@ -303,6 +331,16 @@ function consumoTotal() {
 		{ id: "secadoraPelo", consumo: secadoraPelo},
 		{ id: "maquinaAfeitar", consumo: maquinaAfeitar},
 		{ id: "depiladora", consumo: depiladora},
+		{ id: "planchaPelo", consumo: planchaPelo},
+		{ id: "cepilloDientes", consumo: cepilloDientes},
+		{ id: "aspiradora", consumo: aspiradora},
+		{ id: "secadoraRopa", consumo: secadoraRopa},
+		{ id: "plancha", consumo: plancha},
+		{ id: "aspiradoraRobot", consumo: aspiradoraRobot},
+		{ id: "despertador", consumo: despertador},
+		{ id: "lamparaVentilador", consumo: lamparaVentilador},
+		{ id: "espejoLED", consumo: espejoLED},
+		{ id: "radio", consumo: radio},
 	];
 
 	arrayConsumo.forEach((electrodomestico) => {
