@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salón</title>
     <link rel="stylesheet" href="./css/styleSalon.css">
 </head>
+
 <body>
     <header>
         <h1>Electrodomésticos que puedes tener en tu salón</h1>
@@ -27,20 +29,24 @@
         </h2>
 
         <p>
-            El precio de esta hora es: <p id="precioHora"></p>
+            El precio de esta hora es:
+        <p id="precioHora"></p>
         </p>
-        
+
         <p id="textoLista">
             A continuación te presentamos un listado de electrodomésticos:
-         </p>
+        </p>
         <!--Listado de electrodomésticos del salón-->
 
         <section id="listaElectrodomesticos">
             <ul id="listaSalon">
                 <li>
                     <input type="checkbox" id="televisor" name="televisor">
-                    <label for="televisor"><h3>Televisor</h3></label>
-                    <img src="/img/salón/televisorSalon.jpg" alt="Un televisor de pantalla plana encendido sobre un mueble bajo de salón de madera" id="img">
+                    <label for="televisor">
+                        <h3>Televisor</h3>
+                    </label>
+                    <img src="/img/salón/televisorSalon.jpg"
+                        alt="Un televisor de pantalla plana encendido sobre un mueble bajo de salón de madera" id="img">
                     <p>El consumo de electricidad de un televisor 0.00026 MW</p>
                 </li>
 
@@ -54,8 +60,10 @@
                 <li>
                     <input type="checkbox" id="altavoces" name="altavoces">
                     <label for="altavoces"><h3>Altavoces</h3></label>
-                    <img src="/img/salón/altavoces.jpg" alt="Una imagen de unos altavoces cine colocados debajo de la tele colgada de la pared" id="img">
-                    <p>El consumo de electricidad de unos altavoces 0.00004 MW</p>                
+                    <img src="/img/salón/altavoces.jpg"
+                        alt="Una imagen de unos altavoces cine colocados debajo de la tele colgada de la pared"
+                        id="img">
+                    <p>El consumo de electricidad de unos altavoces 0.00004 MW</p>
                 </li>
 
                 <li>
@@ -86,7 +94,7 @@
                     <p>El consumo de electricidad del aire acondicionado 0.002 MW</p>
                 </li>
 
-                
+
             </ul>
         </section>
         <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
@@ -112,6 +120,7 @@
     </footer>
 
     <script src="/js/salonMain.js"></script>
-    
+
 </body>
+
 </html>

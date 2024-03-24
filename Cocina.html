@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocina</title>
     <link rel="stylesheet" href="./css/styleCocina.css">
 </head>
+
 <body>
     <header>
         <h1>Electrodomésticos que puedes tener en tu cocina</h1>
@@ -22,21 +24,22 @@
 
 
     <main>
-           <!--Listado de electrodomésticos de una cocina-->
+        <!--Listado de electrodomésticos de una cocina-->
         <h2>
             Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
         </h2>
 
         <p>
-            El precio de esta hora es: <p id="precioHora"></p>
+            El precio de esta hora es:
+        <p id="precioHora"></p>
         </p>
 
         <p id="textoLista">
             A continuación te presentamos un listado de electrodomésticos:
         </p>
 
-        <section id="electrodomesticos"> 
-            
+        <section id="electrodomesticos">
+
             <ul id="listaCocina">
                 <li>
                     <input type="checkbox" id="nevera" name="nevera">
@@ -79,7 +82,7 @@
                     <img src="/img/cocina/lavavajillas.jpg" alt="Una imagen de un lavavajillas integrado en un módulo de muebles de cocina con la vajilla limpia" id="img">
                     <p>El consumo de electricidad de una lavavajillas 0.0012 MW </p>                   
                 </li>
-            
+
                 <li>
                     <input type="checkbox" id="cafetera" name="cafetera">
                     <label for="cafetera"><h3>Cafetera</h3></label>
@@ -107,7 +110,7 @@
                     <img src="/img/cocina/ollaDeCoccionLenta.jpg" alt="Una imagen de una olla de cocción lenta con la comida preparada sobre unas lejas de madera vieja" id="img">
                     <p>El consumo de electricidad de una olla de cocción lenta 0.0002 MW</p>                    
                 </li>
-            
+
                 <li>
                     <input type="checkbox" id="batidora" name="batidora">
                     <label for="batidora"><h3>Batidora</h3></label>
@@ -144,7 +147,7 @@
                 </li>
             </ul>
         </section>
-        
+
         <!--Calculo Luz-->
         <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
             <div>
@@ -167,7 +170,8 @@
 
 
     </footer>
-    
+
     <script src="/js/cocinaMain.js"></script>
 </body>
+
 </html>

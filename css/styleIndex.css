@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: rgb(100, 100, 105);
-    color: white; 
+    color: white;
     grid-column: 1fr;
     width: 100%;
     top: 0;
@@ -120,7 +120,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-h2 + p {
+h2+p {
     text-align: center;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -130,12 +130,12 @@ h2 + p {
 #textoBienvenida {
     text-transform: center;
     font-size: 25px;
-    
+
 }
 
 ol {
     font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-left: 20px;
 }
 
@@ -183,7 +183,7 @@ ol {
     padding-bottom: 5%;
 }
 
-ul{
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -212,5 +212,27 @@ footer {
 
 h4 {
     font-weight: bold;
-} 
+    font-size: 20px;
 
+}
+
+#creadores {
+    font-size: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:active {
+    background-color: #3e8e41;
+}
