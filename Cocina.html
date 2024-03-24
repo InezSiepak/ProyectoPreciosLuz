@@ -10,14 +10,13 @@
     <header>
         <h1>Electrodomésticos que puedes tener en tu cocina</h1>
 
-        <section id="vinculos">
+        <nav id="vinculos">
             <a href="index.html" id="inicioLink">Página Principal</a>
             <a href="Salon.html" id="salonLink">Salón</a>
             <a href="Dormitorio.html" id="dormitorioLink">Dormitorio</a>
             <a href="Bano.html" id="bañoLink">Baño</a>
             <a href="Lavanderia.html" id="lavanderiaLink">Lavandería</a>
-
-        </section>
+        </nav>
 
     </header>
 
@@ -25,135 +24,148 @@
     <main>
            <!--Listado de electrodomésticos de una cocina-->
         <h2>
-            En ésta sección puedes calcular el consumo de los artículos que utilizas día a día cocinando.
+            Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
         </h2>
         <p>
             A continuación te presentamos un listado de electrodomésticos:
         </p>
 
         <section id="electrodomesticos"> 
-
-            <article>
-                <h4>Nevera</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                 
-            </article>
-
-            <article>
-                <h4>Microondas</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                    
-            </article>
-
-            <article>
-                <h4>Horno</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                   
-            </article>
-
-            <article>
-                <h4>Vitrocerámica</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
-
-            <article>
-                <h4>Campana extractora</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>     
-            </article>
-
-            <article>
-                <h4>Lavavajillas</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
             
-            <article>
-                <h4>Cafetera</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+            <ul id="listaCocina">
+                <li>
+                    <input type="checkbox" id="myCheck" name="nevera" value="1000">
+                    <label for="nevera"><h3>Nevera</h3></label>
+                    <img src="/img/cocina/nevera.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una nevera es de 1.2KWh (0.0012MWh)</p>              
+                </li>
 
-            <article>
-                <h4>Tostadora</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="micro">
+                    <label for="micro"><h3>Microondas</h3></label>
+                    <img src="/img/cocina/microondas.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una secadora (MV/h)</p>               
+                </li>
 
-            <article>
-                <h4>Plancha</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="horno">
+                <label for="horno"><h3>Horno</h3></label>
+                    <img src="/img/cocina/horno.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una secadora (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h4>Robót de cocina</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="vitro">
+                    <label for="vitro"><h3>Vitrocerámica</h3></label>
+                    <img src="/img/cocina/vitroceramica.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una vitrocerámica (MV/h)</p>                   
+                </li>
 
-            <article>
-                <h4>Olla de cocción Lenta</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="campanaExtractora">
+                    <label for="campanaExtractora"><h3>Campana extractora</h3></label>
+                    <img src="/img/cocina/campana extractora.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una campana extractora (MV/h)</p>    
+                </li>
+
+                <li>
+                    <input type="checkbox" id="myCheck" name="lavavajillas">
+                    <label for="lavavajillas"><h3>Lavavajillas</h3></label>
+                    <img src="/img/cocina/lavavajillas.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una lavavajillas (MV/h)</p>                   
+                </li>
             
-            <article>
-                <h4>Batidora</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="cafetera">
+                    <label for="cafetera"><h3>Cafetera</h3></label>
+                    <img src="/img/cocina/cafetera.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una cafetera (MV/h)</p>                    
+                </li>
 
-            <article>
-                <h4>Licuadora</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="tostadora">
+                    <label for="tostadora"><h3>Tostadora</h3></label>
+                    <img src="/img/cocina/tostadora.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una tostadora (MV/h)</p>                   
+                </li>
 
-            <article>
-                <h4>Exprimidor de zumo</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="robotCocina">
+                    <label for="robotCocina"><h3>Robót de cocina</h3></label>
+                    <img src="/img/cocina/robotCocina.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un robót de cocina (MV/h)</p>                    
+                </li>
 
-            <article>
-                <h4>Freidora</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="olla">
+                    <label for="olla"><h3>Olla de cocción Lenta</h3></label>
+                    <img src="/img/cocina/ollaDeCoccionLenta.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una olla de cocción lenta (MV/h)</p>                    
+                </li>
+            
+                <li>
+                    <input type="checkbox" id="myCheck" name="batidora">
+                    <label for="batidora"><h3>Batidora</h3></label>
+                    <img src="/img/cocina/batidora.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una batidora (MV/h)</p>                   
+                </li>
 
-            <article>
-                <h4>Ósmosis</h4>
-                <img src="" alt="" id="img">
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                     
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="exprimidorZumo">
+                    <label for="exprimidorZumo"><h3>Exprimidor de zumo</h3></label>
+                    <img src="/img/cocina/exprimidorZumo.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un exprimidor de zumo (MV/h)</p>                   
+                </li>
 
-            <article>
-                <h4>Hervidor de agua</h4>
-                <img src="" alt="" id="img">            
-                <p> Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur? Non cupiditate dolorem officiis sunt beatae veritatis molestiae veniam modi tempore quia doloremque, autem corporis ipsa distinctio voluptates, perspiciatis omnis. </p>                    
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="freidora">
+                    <label for="freidora"><h3>Freidora</h3></label>
+                    <img src="/img/cocina/freidora.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una freidora (MV/h)</p>                   
+                </li>
+
+                <li>
+                    <input type="checkbox" id="myCheck" name="osmosis">
+                    <label for="osmosis"> <h3>Ósmosis</h3></label>
+                    <img src="/img/cocina/osmosisAgua.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una ósmosis (MV/h)</p>                    
+                </li>
+
+                <li>
+                    <input type="checkbox" id="myCheck" name="hervidorAgua">
+                    <label for="hervidorAgua"><h3>Hervidor de agua</h3></label>
+                    <img src="/img/cocina/hervidorDeAgua.jpg" alt="" id="img">            
+                    <p>El consumo de electricidad de un hervidor de agua (MV/h)</p>                   
+                </li>
+            </ul>
+        </section>
+        
+        <!--Calculo Luz-->
+        <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
+
+            <input type="button" value="Calcular" onclick="consumoTotal()" />
+
+            <h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
 
         </section>
 
-        <!--Calculo Luz-->
-
-        <footer>
-
-            <h3>Práctica Hack a Boss</h3>
-            <ul>
-                <li> <a href="">Franja horaria</a></li>
-                <li><a href="">Calculo de consumo</a></li>
-                <li> <a href="">FAQ</a></li>
-            </ul>
-
-
-
-
-        </footer>
-    
     </main>
+
+    <footer>
+
+        <h3 id="h3Footer">Práctica Hack a Boss</h3>
+
+        <ul id="creadores">
+            <h4>Integrantes de equipo</h4>
+            <li>Inez</li>
+            <li>Salvador</li>
+            <li>German</li>
+            <li>Roberto</li>
+        </ul>
+
+
+    </footer>
     
+    <script src="/js/LuzMain.js"></script>
 </body>
 </html>

@@ -13,13 +13,13 @@
     <header>
         <h1>Electrodomésticos que puedes tener en tu baño</h1>
 
-        <section id="vinculos">
+        <nav id="vinculos">
             <a href="index.html" id="inicioLink">Página Principal</a>
             <a href="Salon.html" id="salonLink">Salón</a>
             <a href="Cocina.html" id="cocinaLink">Cocina</a>
             <a href="Dormitorio.html" id="dormitorioLink">Dormitorio</a>
             <a href="Lavanderia.html" id="lavanderiaLink">Lavandería</a>
-
+        </nav>
 
     </header>
 
@@ -28,8 +28,6 @@
         
         <h2>
             Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
-            <!--Aquí puedes consultar el consumo de electricidad de los enseres que utilizas en los momentos de
-            higiene y bienestar.-->
         </h2>
         <p>
             A continuación te presentamos un listado de los electrodomésticos más comunes:
@@ -40,8 +38,8 @@
                 <ul id="listaBano">
 
                     <li id="secadoraPelo">
-
-                        <h3>Secadora del pelo</h3>
+                        <input type="checkbox" id="myCheck" name="secadora">
+                        <label for="secadoraDePelo"><h3>Secadora de pelo</h3></label>
                         <img src="./img/baño/secadoraSmall.jpg" alt="Una imagen que muestra una secadora de pelo" id="img">
                         <p>El consumo de electricidad de una secadora (MV/h)</p>
 
@@ -50,8 +48,8 @@
                     </li>
     
                     <li id="calefactor">
-
-                        <h3>Calefactor</h3>
+                        <input type="checkbox" id="myCheck" name="calefactor">
+                        <label for="calefactor"><h3>Calefactor</h3></label>
                         <img src="./img/baño/calefactorSmall.jpg" alt="Una imagen de un calefactor eléctrico" id="img">
                         <p>El consumo de electricidad de un calefactor (MV/h)</p>
 
@@ -59,8 +57,8 @@
                     </li>
     
                     <li id="maquinaAfeitar">
-
-                        <h3>Máquina de afeitar</h3>
+                        <input type="checkbox" id="myCheck" name="maquinaDeAfeitar">
+                        <label for="maquinaDeAfeitar"><h3>Máquina de afeitar</h3></label>
                         <img src="./img/baño/máquinaDeAfeitarSmall.jpg" alt="Una imagen de una máquina eléctrica de afeitar." id="img">
                         <p>El consumo de electricidad de una máquina de afeitar (MV/h)</p>
                             
@@ -68,15 +66,15 @@
                     </li>
     
                     <li id="depiladora">
-
-                        <h3>Depiladora</h3>
+                        <input type="checkbox" id="myCheck" name="depiladora">
+                        <label for="depiladora"><h3>Depiladora</h3></label>
                         <img src="./img/baño/depiladoraSmall.jpg" alt="Una imagen de una depiladora con sus accesorios" id="img">
                         <p>El consumo de electricidad de una depiladora (MV) </p>
                     </li>
     
                     <li id="planchaPelo">
-
-                        <h3>Plancha del pelo</h3>
+                        <input type="checkbox" id="myCheck" name="plancha">
+                        <label for="planchaDePelo"><h3>Plancha de pelo</h3></label>
                         <img src="./img/baño/planchaDePeloSmall.jpg" alt="Una imagen de una plancha de pelo." id="img">
                         <p>El consumo de electricidad de una plancha de pelo (MV/h)</p>
 
@@ -84,8 +82,9 @@
                     </li>
     
                     <li id="cepilloDientes">
-
-                        <h3>Cepillo eléctrico de diente</h3>
+                        
+                        <input type="checkbox" id="myCheck" name="cepillo">
+                        <label for="cepillo"><h3>Cepillo eléctrico de diente</h3></label>
                         <img src="./img/baño/cepilloDeDientesSmall.jpg" alt="Una imagen de un cepillo de dientes eléctrico." id="img">
                         <p>El consumo de electricidad de un cepillo de dientes (MV/h)</p>
 
@@ -93,9 +92,12 @@
                     </li>
     
                     <li id="toallero">
+                        <input type="checkbox" id="myCheck" name="toallero">
 
-                        <h3>Toallero eléctrico</h3>
+                        <label for="toallero"><h3>Toallero eléctrico</h3></label>
+
                         <img src="./img/baño/toalleroSmall.jpg" alt="Una imagen de un toallero eléctrico." id="img">
+
                         <p>El consumo de electricidad de un toallero (MV/h)</p>
 
                             <!--<p>Gasto de luz en el día presente Mv/h</p>  -->                 
@@ -103,26 +105,39 @@
                     </li>
     
                 </ul>
+  
+            </section>
+            <!--Otra sectión con los resultados de los checkbox seleccionados por el usuario-->
+         <!--Para enviar los checkbox seleccionados un botón submit, y posiblemente un <outpuut> para mostrar el resultado del cálculo que es lanzado desde JS -->
 
-                        <!--Otra sectión con los resultados de los checkbox seleccionados por el usuario-->
-                     <!--Para enviar los checkbox seleccionados un botón submit, y posiblemente un <outpuut> para mostrar el resultado del cálculo que es lanzado desde JS -->
+            <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
 
-       </section>
+                <input type="button" value="Calcular" onclick="consumoTotal()" />
+
+                <h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
+
+            </section>
 
        <!-- OPCIONAL: si nos da tiempo, mostrar aquí también la mejor y peor hora para utilizar los electrodomésticos -->
 
-       <footer>
-
-            <h3>Práctica Hack a Boss</h3>
-            <ul>
-                <li> <a href="">Franja horaria</a></li>
-                <li><a href="">Calculo de consumo</a></li>
-                <li> <a href="">FAQ</a></li>
-            </ul>
-
-        </footer>
-
     </main>
+    
+    <footer>
+
+        <h3 id="h3Footer">Práctica Hack a Boss</h3>
+
+        <ul id="creadores">
+            <h4>Integrantes de equipo</h4>
+            <li>Inez</li>
+            <li>Salvador</li>
+            <li>German</li>
+            <li>Roberto</li>
+        </ul>
+
+    </footer>
+
+
+    <script src="/js/LuzMain.js"></script>
 
 </body>
 

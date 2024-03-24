@@ -24,7 +24,7 @@
 
     <main>
         <h2>
-            En ésta sección puedes calcular el consumo de los artículos que utilizas para mantener tu hogar limpio.
+            Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
         </h2>
         <p>
             A continuación te presentamos un listado de electrodomésticos:
@@ -32,55 +32,64 @@
         <!--Listado de electrodomésticos de limpieza-->
 
         <section id="electrodomesticos">
+            
+            <ul id="listaLavanderia">
+                <li>
+                    <input type="checkbox" id="myCheck" name="aspiradora">
+                    <label for="aspiradora"><h3>Aspiradora</h3></label>
+                    <img src="/img/lavanderia/aspiradora.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una aspiradora (MV/h)</p> 
+                </li>
 
-            <article>
-                <h3>Aspiradora</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p> 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="lavadora">
+                    <label for="lavadora"><h3>Lavadora</h3></label>
+                    <img src="/img/lavanderia/lavadora.jpeg" alt="" id="img">
+                    <p>El consumo de electricidad de una lavadora (MV/h)</p>                
+                </li>
 
-            <article>
-                <h3>Lavadora</h43>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="secadoraDeRopa">
+                    <label for="secadoraDeRopa"><h3>Secadora de ropa</h3></label>
+                    <img src="/img/lavanderia/secadoraRopa.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una secadora de ropa (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h3>Secadora</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="plancha">
+                    <label for="plancha"><h3>Plancha</h3></label>
+                    <img src="/img/lavanderia/planchaRopa.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una plancha (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h3>Plancha</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
-
-            <article>
-                <h3>Aspiradora Robót</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
-
+                <li>
+                    <input type="checkbox" id="myCheck" name="aspiradoraRobot">
+                    <label for="aspiradoraRobot"><h3>Aspiradora Robót</h3></label>
+                    <img src="/img/lavanderia/aspiradoraRobot.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una aspiradora robót (MV/h)</p>                
+                </li>
+            </ul>
        </section>
 
        <!--Calculo Luz-->
+    </main>
 
-       <footer>
+    <footer>
 
-        <h3>Práctica Hack a Boss</h3>
-        <ul>
-            <li> <a href="">Franja horaria</a></li>
-            <li><a href="">Calculo de consumo</a></li>
-            <li> <a href="">FAQ</a></li>
+        <h3 id="h3Footer">Práctica Hack a Boss</h3>
+
+        <ul id="creadores">
+            <h4>Integrantes de equipo</h4>
+            <li>Inez</li>
+            <li>Salvador</li>
+            <li>German</li>
+            <li>Roberto</li>
         </ul>
 
-
-
-
     </footer>
-    </main>
+
+
+    <script src="/js/LuzMain.js"></script>
 
 </body>
 </html>

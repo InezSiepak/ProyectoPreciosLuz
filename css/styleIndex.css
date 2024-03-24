@@ -54,14 +54,6 @@ h1 {
     padding: .8rem;
 }
 
-#iluminacionLink {
-    outline: none;
-    text-decoration: none;
-    color: white;
-    padding: .8rem;
-
-}
-
 #salonLink {
     outline: none;
     text-decoration: none;
@@ -143,9 +135,9 @@ h2 {
     margin: 20px;
 }
 
-#imgIluminacion {
+#imgDormitorio {
     border: 10px;
-    width: 220px;
+    width: 320px;
     margin: 20px;
 }
 

@@ -22,7 +22,7 @@
 
     <main>
         <h2>
-            En ésta sección puedes calcular lo que cuesta dar luz a tu espacio antes de dormir.
+            Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
         </h2>
         <p>
             A continuación te presentamos un listado de electrodomésticos:
@@ -31,62 +31,72 @@
 
 
         <section id="electrodomesticos">
-
-            <article>
-                <h3>Lámparas</h3>
-                <img src="" alt="" id="img">
-                 <p> Descripción </p> 
-            </article>
             
-            <article>
-                <h3>Despertador</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+            <ul id="listaDormitorio">
+                <li>
+                    <input type="checkbox" id="myCheck" name="lampara">
+                    <label for="lampara"><h3>Lámparas</h3></label>
+                    <img src="/img/dormitorio/lampara.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una lámpara (MV/h)</p>
+                </li>
+            
+                <li>
+                    <input type="checkbox" id="myCheck" name="despertador">
+                    <label for="despertador"><h3>Despertador</h3></label>
+                    <img src="/img/dormitorio/despertador.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un despertador (MV/h)</p>                
+                </li>
 
-            <article>
-                <h3>Lámpara de techo con ventilador</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="lamparaVentilador">
+                    <label for="lamparaVentilador"><h3>Lámpara de techo con ventilador</h3></label>
+                    <img src="/img/dormitorio/lamparaVentilador.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una lámpara de techo con ventilador (MV/h)</p>                
+                </li>
 
-            <article>
-                <h3>Espejo con Luz Led</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="espejoLED">
+                    <label for="espejoLED"><h3>Espejo con Luz LED</h3></label>
+                    <img src="/img/dormitorio/espejoConLuz.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un espejo de luz LED (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h43Televisor</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
-
-            <article>
-                <h3>Radio</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
-
+                <li>
+                    <input type="checkbox" id="myCheck" name="radio">
+                    <label for="radio"><h3>Radio</h3></label>
+                    <img src="/img/dormitorio/radio.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una radio (MV/h)</p>                
+                </li>
+            </ul>
        </section>
-
-       <!--Calculo Luz-->
        
-       <footer>
+       <!--Calculo Luz-->
+       <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
 
-        <h3>Práctica Hack a Boss</h3>
-        <ul>
-            <li> <a href="">Franja horaria</a></li>
-            <li><a href="">Calculo de consumo</a></li>
-            <li> <a href="">FAQ</a></li>
+        <input type="button" value="Calcular" onclick="consumoTotal()" />
+
+        <h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
+
+    </section>
+       
+    </main>
+
+    <footer>
+
+        <h3 id="h3Footer">Práctica Hack a Boss</h3>
+
+        <ul id="creadores">
+            <h4>Integrantes de equipo</h4>
+            <li>Inez</li>
+            <li>Salvador</li>
+            <li>German</li>
+            <li>Roberto</li>
         </ul>
-
-
-
 
     </footer>
 
-    </main>
+
+    <script src="/js/LuzMain.js"></script>
 
 </body>
 </html>

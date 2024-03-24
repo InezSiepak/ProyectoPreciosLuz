@@ -1,137 +1,75 @@
 'use strict';
+const url = 'https://bypass-cors-beta.vercel.app/?url=https://api.preciodelaluz.org/v1/prices/all?zone=PCB'
 
-
-
-
-
-function obtenerDatos(hora) {
-    
-    fetch(`https://bypass-cors-beta.vercel.app/?url=https://api.preciodelaluz.org/v1/prices/all?zone=PCB`)
-
-        .then(function(response){
-            return response.json();
-        })
-
-        .then(function(data){
-            console.log(data.data);
-            let datos = data.data
-            localStorage.setItem("datosDeHoy", JSON.stringify(datos));
-            let datosRecuperados = JSON.parse(localStorage.getItem("datosDeHoy"))
-            
-            switch (hora) {
-
-                case 0o0:
-                    console.log(datosRecuperados["00-01"].price);
-                    break;
-                
-                case 0o1:
-                    console.log(datosRecuperados["01-02"].price);
-                    break;
-
-                case 0o2:
-                    console.log(datosRecuperados["02-03"].price);
-                    break;
-
-                case 0o3:
-                    console.log(datosRecuperados["03-04"].price);
-                    break;
-                    
-                
-                case 0o4:
-                    console.log(datosRecuperados["04-05"].price);
-                    break;
-
-                case 0o5:
-                    console.log(datosRecuperados["05-06"].price);
-                    break;
-                
-                case 0o6:
-                    console.log(datosRecuperados["06-07"].price);
-                    break;
-                
-                case 0o7:
-                    console.log(datosRecuperados["07-08"].price);
-                    break;
-                
-                case 8:
-                    console.log(datosRecuperados["08-09"].price);
-                    break;
-
-                case 9:
-                    console.log(datosRecuperados["09-10"].price);
-                    break;
-
-                case 10:
-                    console.log(datosRecuperados["10-11"].price);
-                    break;
-                    
-                
-                case 11:
-                    console.log(datosRecuperados["11-12"].price);
-                    break;
-
-                case 12:
-                    console.log(datosRecuperados["12-13"].price);
-                    break;
-
-                case 13:
-                    console.log(datosRecuperados["13-14"].price);
-                    break;
-                
-                case 14:
-                    console.log(datosRecuperados["14-15"].price);
-                    break;
-
-                case 15:
-                    console.log(datosRecuperados["15-16"].price);
-                    break;
-
-                case 16:
-                    console.log(datosRecuperados["16-17"].price);
-                    /* console.log((1000*Number(datosRecuperados["16-17"].price))/10**6); */
-                    break;
-                    
-                
-                case 17:
-                    console.log(datosRecuperados["17-18"].price);
-                   /*  console.log((1000*Number(datosRecuperados["17-18"].price))/10**6); */
-                    break;
-
-                case 18:
-                    console.log(datosRecuperados["18-19"].price);
-                    break;
-                
-                case 19:
-                    console.log(datosRecuperados["19-20"].price);
-                    /* console.log((2000*Number(datosRecuperados["19-20"].price))/10**6) */
-                    break;
-                
-                case 20:
-                    console.log(datosRecuperados["20-21"].price);
-                    
-                    break;
-                
-                case 21:
-                    console.log(datosRecuperados["21-22"].price);
-                    break;
-
-                case 22:
-                    console.log(datosRecuperados["22-23"].price);
-                    break;
-
-                case 23:
-                    console.log(datosRecuperados["23-24"].price);
-                    break;
-                    
-            } 
-            
-        })
-
+/**
+ *  @param {number} diviceWh
+ * @param {number} startHour
+ * @param {number} endHour
+ * @returns {Promise<number,Map<string,number>>} {priceSum, pricesByHour}
+ * 
+ */
+export async function getPriceDeviceByHourRange(diviceWh, startHour, endHour) {
+    const endHourParsed = getEndHour(startHour, endHour);
+    const priceSum = await getTotalPrice(startHour, endHourParsed, diviceWh);
+    return priceSum;
 }
 
-const now = new Date();
-let horaActual = now.getHours()
+function getPriceByHours() {
+    return fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (!data?.data) {
+                console.log('error, no data')
+                return [];
+            }
+            return Object.values(data.data)
+        })
+        .catch(error => console.log(error))
+}
 
+async function getPriceList() {
+    const savedPrices = localStorage.getItem('prices');
+    const storageDate = savedPrices ? savedPrices.date : null;
 
+    const newDate = (new Date()).setHours(0, 0, 0, 0);
+    const moreThan24Hours = newDate.getDate() - new Date(storageDate).getDate() > 1;
 
-obtenerDatos(horaActual)
+    if (moreThan24Hours) {
+        const priceList = await getPriceByHours();
+        localStorage.setItem('prices', JSON.stringify({ date: newDate, data: priceList }));
+    }
+    return JSON.parse(localStorage.getItem('prices').data);
+}
+
+/**
+ * Description
+ * @param {any} startHour
+ * @param {any} endHour
+ * @param {any} diviceWh
+ * @returns {any}
+ */
+async function getTotalPrice(startHour, endHour, diviceWh) {
+    const prices = await getPriceList();
+    let priceSum = 0;
+    const pricesByHour = [];
+    // console.log(startHour: ${startHour}, totalHours: ${endHour});
+    for (let i = startHour; i < endHour; i++) {
+        // console.log(Hour: ${prices[i].hour}, price: ${prices[i].price});
+        pricesByHour.push({ hour: prices[i].hour, price: prices[i].price });
+        const priceWh = prices[i].price / 1000000;
+        priceSum += priceWh * diviceWh;
+    }
+    return { priceSum, pricesByHour };
+}
+
+function getEndHour(startHour, endHour) {
+    if (!Number(startHour) && (startHour < 0 || startHour > 23)) {
+        console.log('startHour is invalid');
+        throw new Error('startHour is invalid');
+    }
+
+    const endHourParsed = (endHour ?? 0) <= startHour
+        ? startHour + 1
+        : endHour;
+    return endHourParsed;
+}

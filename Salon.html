@@ -23,7 +23,7 @@
 
     <main>
         <h2>
-            En ésta sección puedes calcular el consumo de los artículos que utilizas día a día en tu espacio de relax.
+            Aquí puedes consultar el consumo de electricidad que tenrás en el día de hoy.
         </h2>
         <p>
             A continuación te presentamos un listado de electrodomésticos:
@@ -31,66 +31,77 @@
         <!--Listado de electrodomésticos del salón-->
 
         <section id="electrodomesticos">
+            <ul id="listaSalon">
+                <li>
+                    <input type="checkbox" id="myCheck" name="televisor">
+                    <label for="televisor"><h3>Televisor</h3></label>
+                    <img src="/img/salón/televisorSalon.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un televisor (MV/h)</p>
+                </li>
 
-            <article>
-                <h3>Televisor</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p> 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="wifi">
+                    <label for="wifi"><h3>Modem WiFi</h3></label>
+                    <img src="/img/salón/WiFi.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un módem WiFi (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h3>Modem WiFi</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="altavoces">
+                    <label for="altavoces"><h3>Altavoces</h3></label>
+                    <img src="/img/salón/altavoces.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de unos altavoces (MV/h)</p>                
+                </li>
 
-            <article>
-                <h3>Altavoces</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="consolaVideojuegos">
+                    <label for="consolaVideojuegos"><h3>Consolas de videojuegos</h3></label>
+                    <img src="/img/salón/consolaVideojuegos.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de una consola de videojuegos (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h3>Consolas de videojuegos</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="ordenador">
+                    <label for="ordenador"><h3>Ordenador</h3></label>
+                    <img src="/img/salón/ordenador.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un ordenador (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h3>Ordenador</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="ventilador">
+                    <label for="ventilador"><h3>Ventilador</h3></label>
+                    <img src="/img/salón/ventilador.jpg" alt="" id="img">
+                    <p>El consumo de electricidad de un ventilador (MV/h)</p>                 
+                </li>
 
-            <article>
-                <h3>Ventilador</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+                <li>
+                    <input type="checkbox" id="myCheck" name="airCon">
+                    <label for="airCon"><h3>Aire acondicionado</h3></label>
+                    <img src="" alt="" id="img">
+                    <p>El consumo de electricidad del aire acondicionado (MV/h)</p>
+                </li>
 
-            <article>
-                <h3>Aire Acondicionado</h3>
-                <img src="" alt="" id="img">
-                <p> Descripción </p>                 
-            </article>
+            </ul>
        </section>
 
        <!--Calculo Luz-->
+    </main>
 
-       <footer>
+    <footer>
 
-        <h3>Práctica Hack a Boss</h3>
-        <ul>
-            <li> <a href="">Franja horaria</a></li>
-            <li><a href="">Calculo de consumo</a></li>
-            <li> <a href="">FAQ</a></li>
+        <h3 id="h3Footer">Práctica Hack a Boss</h3>
+
+        <ul id="creadores">
+            <h4>Integrantes de equipo</h4>
+            <li>Inez</li>
+            <li>Salvador</li>
+            <li>German</li>
+            <li>Roberto</li>
         </ul>
 
-
-
-
     </footer>
-    </main>
+
+    <script src="/js/LuzMain.js"></script>
     
 </body>
 </html>
