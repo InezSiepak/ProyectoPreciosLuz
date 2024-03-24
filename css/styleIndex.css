@@ -10,6 +10,7 @@ body {
     grid-template-columns: 1fr 20%;
     grid-template-rows: 200px 100px minmax(100px, auto);
     gap: 5px; */
+    background-color: rgb(203, 221, 224);
     grid-auto-rows: minmax(125px, auto);
     grid-gap: .5rem;
 
@@ -18,7 +19,7 @@ body {
 
 header {
     background-color: rgb(100, 100, 105);
-    color: white; /*Qué tal de ponerle otro color(pj. amarillo) para diferenciarlo de las secciones?*/
+    color: white; 
     grid-column: 1fr;
     width: 100%;
     top: 0;
@@ -28,24 +29,27 @@ header {
 }
 
 h1 {
+    color: rgb(114, 252, 250);
+    font-size: 40px;
     text-align: justify;
-    padding: .5rem;
+    padding: 1rem;
     justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
 }
 
 #vinculos {
+    background-color: rgb(89, 89, 94);
     color: white;
-    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
     outline: none;
     text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* #links {
-    outline: none;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-} */
 
 #limpiezaLink {
     outline: none;
@@ -68,7 +72,6 @@ h1 {
     text-decoration: none;
     color: white;
     padding: .8rem;
-
 }
 
 #dormitorioLink {
@@ -95,55 +98,105 @@ h1 {
 }
 
 #bienvenida {
+    text-align: center;
     margin: 1.5rem;
     justify-content: center;
 
 }
 
 #comoFunciona {
+    text-align: justify;
     margin: 1.5rem;
     justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 h2 {
-    padding: 1rem;
+    color: rgb(10, 79, 190);
+    /*text-shadow: 3px 2px 3px rgb(213, 147, 42);*/
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 + p {
     text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#textoBienvenida {
+    text-transform: center;
+    font-size: 25px;
+    
+}
+
+ol {
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 20px;
 }
 
 #imgCocina {
-    border: 200px;
+    border: 300px;
     width: 320px;
     margin: 20px;
+    padding: 1rem;
 
 }
 
 #imgBaño {
     border: 10px;
-    width: 320px;
+    width: 420px;
     margin: 20px;
+    padding: 1rem;
 }
 
 #imgSalon {
     border: 10px;
-    width: 320px;
+    width: 420px;
     margin: 20px;
+    padding: 1rem;
 }
 
 #imgLimpieza {
     border: 10px;
-    width: 320px;
+    width: 420px;
     margin: 20px;
+    padding: 1rem;
 }
 
 #imgDormitorio {
     border: 10px;
-    width: 320px;
+    width: 420px;
     margin: 20px;
+    padding: 1rem;
+}
+
+#accesoNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    list-style-type: none;
 }
 
 h3 {
+    color: rgb(12, 65, 150);
     padding: 10px;
     text-align: center;
+    font-size: 25px;
 }
 
 footer {
@@ -154,5 +207,10 @@ footer {
 
 #h3Footer {
     color: white;
-    text-align: left;
+    text-align: center;
 }
+
+h4 {
+    font-weight: bold;
+} 
+

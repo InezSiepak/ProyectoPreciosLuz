@@ -22,7 +22,7 @@ body {
 /* header */
 
 header {
-    background-color: rgb(134, 140, 140);
+    background-color: rgb(100, 100, 105);
     color: white;
     grid-column: 1fr;
     width: 100%;
@@ -90,6 +90,13 @@ h1 {
     padding: 1rem;
 }
 
+#banoLink {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
 /* fin del header */
 
 
@@ -97,7 +104,7 @@ h1 {
 
 h2 {
     color: rgb(10, 79, 190);
-    text-align: justify;
+    text-align: center;
     /*text-shadow: 3px 2px 3px rgb(213, 147, 42);*/
     font-size: 35px;
     margin-top: 20px;
@@ -115,15 +122,12 @@ h2 + p {
     margin-bottom: 40px; 
 }
 
-/*
-h2 + p {
+#textoLista {
     text-align: center;
-    font-size: 25px;
-    color: black;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    font-size: 30px;
+    color: rgb(23, 90, 93);
+    font-weight: bold;
 }
-*/
 
 /* 1º sección de los electrodomésticos */
 
@@ -145,7 +149,7 @@ ul {
 }
 
 #listaCocina {
-    /*background-color: rgb(229, 243, 179);*/
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -180,3 +184,18 @@ img + p {
 }
 
 /* fin de la 1º sección */
+
+footer {
+    background-color: rgb(100, 100, 105);
+    color: white;
+
+}
+
+#h3Footer {
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-weight: bold;
+} 
