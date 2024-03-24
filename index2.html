@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+        <header>
+            <h1>
+                ¡Calcula tu consumo de energia por horas!
+            </h1>
+            <p>
+                El precio de esta hora es : <p id="precioHora"></p>
+            </p>
+        </header>
+		<section>
+			<li>
+                <input id="nevera" type="checkbox" /><label for="nevera">Nevera</label>
+            </li>
+
+            <li>
+                <input id="ordenador" type="checkbox" /><label for="ordenador">Ordenador</label>
+            </li>
+
+            <li>
+                <input id="lavavajillas" type="checkbox" /><label for="lavavajillas">Lavavajillas</label>
+            </li>
+
+            <li>
+                <input id="lampara" type="checkbox" /><label for="lampara">Lampara</label>
+            </li>
+
+            <li>
+                <input id="lavadora" type="checkbox" /><label for="lavadora">Lavadora</label>
+            </li>
+
+            <li>
+                <input id="television" type="checkbox" /><label for="television">Televisión</label>
+            </li>
+
+            <li>
+                <input id="airCon" type="checkbox" /><label for="airCon">Aire Acondicionado</label>
+            </li>
+
+            <li>
+                <input id="calefactor" type="checkbox" /><label for="calefactor">Calefactor</label>
+            </li>
+			
+			<div>
+				<input type="button" value="Calcular" onclick="consumoTotal()" />
+			</div>
+		</section>
+		<section></sectionid>
+			<h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
+		</section>
+
+		<script src="./js/LuzMain.js"></script>
+	</body>
+</html>
