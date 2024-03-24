@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limpieza</title>
     <link rel="stylesheet" href="./css/styleLavanderia.css">
 </head>
+
 <body>
-    
+
     <header>
         <h1>Electrodomésticos de limpieza que puedes tener en tu hogar</h1>
 
@@ -28,75 +30,94 @@
         </h2>
 
         <p>
-            El precio de esta hora es: <p id="precioHora"></p>
+            El precio de esta hora es:
+        <p id="precioHora"></p>
         </p>
 
         <p id="textoLista">
             A continuación te presentamos un listado de electrodomésticos:
-         </p>
+        </p>
         <!--Listado de electrodomésticos de limpieza-->
 
         <section id="electrodomesticos">
-            
+
             <ul id="listaLavanderia">
                 <li>
                     <input type="checkbox" id="aspiradora" name="aspiradora">
-                    <label for="aspiradora"><h3>Aspiradora</h3></label>
-                    <img src="/img/lavanderia/aspiradora.jpg" alt="Una imagen de una aspiradora roja, sobre una moqueta de color beige" id="img">
-                    <p>El consumo de electricidad de una aspiradora (MV/h)</p> 
+                    <label for="aspiradora">
+                        <h3>Aspiradora</h3>
+                    </label>
+                    <img src="/img/lavanderia/aspiradora.jpg"
+                        alt="Una imagen de una aspiradora roja, sobre una moqueta de color beige" id="img">
+                    <p>El consumo de electricidad de una aspiradora (MV/h)</p>
                 </li>
 
                 <li>
                     <input type="checkbox" id="lavadora" name="lavadora">
-                    <label for="lavadora"><h3>Lavadora</h3></label>
-                    <img src="/img/lavanderia/lavadora.jpeg" alt="Una imagen de una lavadora con ropa dentro, encima de ella tiene colocado un suavizante y producto para lavar, al lado tiene una cesta para la ropa sucia, y a otro lado un mueble blanco con productos y toallas limpias" id="img">
-                    <p>El consumo de electricidad de una lavadora (MV/h)</p>                
+                    <label for="lavadora">
+                        <h3>Lavadora</h3>
+                    </label>
+                    <img src="/img/lavanderia/lavadora.jpeg"
+                        alt="Una imagen de una lavadora con ropa dentro, encima de ella tiene colocado un suavizante y producto para lavar, al lado tiene una cesta para la ropa sucia, y a otro lado un mueble blanco con productos y toallas limpias"
+                        id="img">
+                    <p>El consumo de electricidad de una lavadora (MV/h)</p>
                 </li>
 
                 <li>
                     <input type="checkbox" id="secadoraRopa" name="secadoraRopa">
-                    <label for="secadoraRopa"><h3>Secadora de ropa</h3></label>
-                    <img src="/img/lavanderia/secadoraRopa.jpg" alt="Una foto de una secadora de ropa, con ropa dentro y un cesto con ropa al lado, colocada en una esquina con una ventana y flores" id="img">
-                    <p>El consumo de electricidad de una secadora de ropa (MV/h)</p>                 
+                    <label for="secadoraRopa">
+                        <h3>Secadora de ropa</h3>
+                    </label>
+                    <img src="/img/lavanderia/secadoraRopa.jpg"
+                        alt="Una foto de una secadora de ropa, con ropa dentro y un cesto con ropa al lado, colocada en una esquina con una ventana y flores"
+                        id="img">
+                    <p>El consumo de electricidad de una secadora de ropa (MV/h)</p>
                 </li>
 
                 <li>
                     <input type="checkbox" id="plancha" name="plancha">
-                    <label for="plancha"><h3>Plancha</h3></label>
-                    <img src="/img/lavanderia/planchaRopa.jpg" alt="Una imagen de una plancha color lila, sobre la tabla de planchar blanca con flores lilas y una pila de ropa planchada" id="img">
-                    <p>El consumo de electricidad de una plancha (MV/h)</p>                 
+                    <label for="plancha">
+                        <h3>Plancha</h3>
+                    </label>
+                    <img src="/img/lavanderia/planchaRopa.jpg"
+                        alt="Una imagen de una plancha color lila, sobre la tabla de planchar blanca con flores lilas y una pila de ropa planchada"
+                        id="img">
+                    <p>El consumo de electricidad de una plancha (MV/h)</p>
                 </li>
 
                 <li>
                     <input type="checkbox" id="aspiradoraRobot" name="aspiradoraRobot">
-                    <label for="aspiradoraRobot"><h3>Aspiradora Robót</h3></label>
-                    <img src="/img/lavanderia/aspiradoraRobot.jpg" alt="Una imagen de una aspiradora robót redondo sobre un suelo parquet de madera" id="img">
-                    <p>El consumo de electricidad de una aspiradora robót (MV/h)</p>                
+                    <label for="aspiradoraRobot">
+                        <h3>Aspiradora Robót</h3>
+                    </label>
+                    <img src="/img/lavanderia/aspiradoraRobot.jpg"
+                        alt="Una imagen de una aspiradora robót redondo sobre un suelo parquet de madera" id="img">
+                    <p>El consumo de electricidad de una aspiradora robót (MV/h)</p>
                 </li>
             </ul>
-       </section>
+        </section>
 
-       <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
-        <div>
-            <input type="button" value="Calcular" onclick="consumoTotal()" />
-        </div>
-        <h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
-    </section>
+        <section id="resultadoFinal" aria-label="Resultado total del consumo de los electrodomésticos seleccionados">
+            <div>
+                <input class="button" type="button" value="Calcular" onclick="consumoTotal()" />
+            </div>
+            <h3 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h3>
+        </section>
 
-       <!--Calculo Luz-->
+        <!--Calculo Luz-->
     </main>
 
     <footer>
 
         <h3 id="h3Footer">Práctica Hack a Boss</h3>
 
-        <ul id="creadores">
-            <h4>Integrantes de equipo</h4>
-            <li>Roberto</li>
-            <li>Inez</li>
-            <li>Salvador</li>
-            <li>German</li>
-        </ul>
+
+        <h4>Integrantes de equipo</h4>
+        <p>Roberto</p>
+        <p>Inez</p>
+        <p>Salvador</p>
+        <p>German</p>
+
 
     </footer>
 
@@ -104,4 +125,5 @@
     <script src="/js/lavanderiaMain.js"></script>
 
 </body>
+
 </html>
